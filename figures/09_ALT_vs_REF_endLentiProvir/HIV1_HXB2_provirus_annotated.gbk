@@ -1,0 +1,497 @@
+LOCUS       HIV1_HXB2_provirus      9719 bp    DNA     linear   VRL 14-APR-2026
+DEFINITION  Human immunodeficiency virus type 1 (HXB2) integrated provirus,
+            complete annotated genome; HIV1/HTLV-III/LAV reference.
+ACCESSION   K03455
+VERSION     K03455.1
+KEYWORDS    .
+SOURCE      .
+  ORGANISM  Human immunodeficiency virus 1
+            Viruses; Riboviria; Pararnavirae; Artverviricota; Revtraviricetes;
+            Ortervirales; Retroviridae; Orthoretrovirinae; Lentivirus.
+COMMENT     Integrated proviral dsDNA form of HIV-1 HXB2 as found after
+            integration into the human genome (e.g. in T cells). Sequence
+            source: GenBank K03455.1. Annotation includes all major ORFs, LTR
+            subregions (U3/R/U5), regulatory elements (TATA box, NF-kB sites,
+            TAR, PBS, Psi, PPT, cPPT, RRE, poly-A signal), splice sites, and
+            processed peptide boundaries. Coordinates follow standard HXB2
+            numbering (LANL HIV Database). Annotated by Biomni/Phylo 2026-04-14.
+FEATURES             Location/Qualifiers
+     source          1..9719
+                     /organism="Human immunodeficiency virus 1"
+                     /mol_type="genomic DNA"
+                     /strain="HXB2"
+                     /db_xref="taxon:11676"
+                     /note="Integrated proviral dsDNA; reference genome
+                     K03455.1"
+     repeat_region   1..634
+                     /note="5' Long Terminal Repeat (LTR); U3-R-U5 structure;
+                     contains viral promoter and enhancer"
+                     /rpt_type=long_terminal_repeat
+                     /gene="5' LTR"
+     regulatory      1..453
+                     /regulatory_class="other"
+                     /note="U3 region of 5' LTR; contains transcriptional
+                     enhancer, NF-kB binding sites, SP1 sites, TATA box"
+                     /gene="U3 (5' LTR)"
+     protein_bind    390..399
+                     /note="NF-kB binding site I; core sequence GGGACTTTCC;
+                     activates viral transcription upon T cell activation"
+                     /bound_moiety="NF-kB p50/p65"
+     protein_bind    401..410
+                     /note="NF-kB binding site II; core sequence GGGACTTTCC;
+                     activates viral transcription upon T cell activation"
+                     /bound_moiety="NF-kB p50/p65"
+     regulatory      430..436
+                     /regulatory_class="TATA_box"
+                     /note="TATA box; core promoter element; sequence TATAAAA;
+                     directs RNA Pol II initiation at TSS (+1, pos. 454)"
+     regulatory      454
+                     /regulatory_class="transcriptional_cis_regulatory_region"
+                     /note="Transcription start site (+1); cap site of all viral
+                     mRNAs; start of R region"
+     repeat_region   454..551
+                     /note="R repeat region of 5' LTR; present at both ends of
+                     viral RNA; contains TAR RNA hairpin"
+                     /rpt_type=direct
+                     /gene="R (5' LTR)"
+     stem_loop       454..513
+                     /note="TAR (Trans-Activation Response) RNA element;
+                     stem-loop hairpin; binds Tat protein and P-TEFb
+                     (CDK9/CycT1); required for transcription elongation; target
+                     of Tat-based antiretrovirals"
+                     /gene="TAR"
+     repeat_region   552..634
+                     /note="U5 region of 5' LTR"
+                     /gene="U5 (5' LTR)"
+     5UTR            454..789
+                     /note="5' untranslated leader region; contains PBS, Psi
+                     packaging signal, splice donor"
+     primer_bind     complement(635..653)
+                     /note="Primer Binding Site (PBS); complementary to 3' 18 nt
+                     of human tRNA-Lys3; initiation site for minus-strand
+                     strong-stop DNA synthesis by reverse transcriptase"
+                     /gene="PBS"
+     misc_RNA        686..789
+                     /note="Psi (psi) packaging signal; required for selective
+                     encapsidation of viral genomic RNA; contains stem-loops SL1
+                     (DIS), SL2 (splice donor), SL3 (Psi), SL4 (AUG)"
+                     /gene="Psi"
+     misc_feature    743..744
+                     /note="Major 5' splice donor site (D1/SD); GT dinucleotide;
+                     used for all spliced viral mRNA species"
+     CDS             790..2292
+                     /gene="gag"
+                     /product="Gag polyprotein p55"
+                     /codon_start=1
+                     /protein_id="AAB50259.1"
+                     /note="Structural polyprotein; cleaved by viral protease
+                     (PR) into MA, CA, SP1, NC, SP2, p6; drives virion assembly
+                     and budding"
+     mat_peptide     790..1185
+                     /gene="gag"
+                     /product="Matrix protein MA p17"
+                     /note="N-terminally myristoylated; targets Gag to plasma
+                     membrane; forms outer shell of virion core; contains
+                     nuclear localization signal for PIC import"
+     mat_peptide     1186..1878
+                     /gene="gag"
+                     /product="Capsid protein CA p24"
+                     /note="Forms conical capsid core; N-terminal domain (NTD)
+                     and C-terminal domain (CTD); cyclophilin A binding loop;
+                     major diagnostic antigen; target of capsid inhibitors
+                     (lenacapavir)"
+     mat_peptide     1879..2085
+                     /gene="gag"
+                     /product="Nucleocapsid protein NC p7"
+                     /note="Two CCHC zinc finger motifs; RNA chaperone;
+                     facilitates tRNA primer annealing and strand transfer
+                     during reverse transcription; packages genomic RNA via Psi
+                     recognition"
+     mat_peptide     2134..2292
+                     /gene="gag"
+                     /product="p6 protein"
+                     /note="PTAP late domain recruits TSG101 (ESCRT-I) for
+                     virion budding; LYPxnL motif recruits ALIX; binds Vpr for
+                     virion incorporation"
+     misc_feature    2083..2093
+                     /note="Ribosomal frameshift signal; slippery sequence
+                     TTTTTTA followed by RNA stem-loop; ~5% of ribosomes shift
+                     -1 to produce Gag-Pol fusion polyprotein; ratio controls
+                     PR:RT:IN stoichiometry"
+     CDS             2358..5096
+                     /gene="pol"
+                     /product="Pol polyprotein (Gag-Pol fusion, NH2-terminus
+                     uncertain)"
+                     /codon_start=1
+                     /protein_id="AAB50258.1"
+                     /note="Enzymatic polyprotein produced by -1 ribosomal
+                     frameshift at gag-pol junction; autocatalytically cleaved
+                     by PR into protease, reverse transcriptase/RNase H, and
+                     integrase"
+     mat_peptide     2358..2617
+                     /gene="pol"
+                     /product="Protease PR p10"
+                     /note="Aspartyl protease; homodimer; cleaves Gag and
+                     Gag-Pol at 9 sites; essential for virion maturation; target
+                     of protease inhibitors (PIs): darunavir, lopinavir, etc."
+     mat_peptide     2618..4229
+                     /gene="pol"
+                     /product="Reverse transcriptase RT p66/p51"
+                     /note="RNA- and DNA-dependent DNA polymerase; p66/p51
+                     heterodimer; converts ssRNA genome to dsDNA; contains
+                     polymerase domain and RNase H domain (p66 only); target of
+                     NRTIs (tenofovir, emtricitabine) and NNRTIs (efavirenz,
+                     rilpivirine)"
+     mat_peptide     3870..4229
+                     /gene="pol"
+                     /product="RNase H domain of RT"
+                     /note="Degrades RNA strand of RNA:DNA hybrid during
+                     minus-strand synthesis; also cleaves RNA primers; part of
+                     p66 subunit only"
+     mat_peptide     4230..5096
+                     /gene="pol"
+                     /product="Integrase IN p32"
+                     /note="Catalyzes 3' processing and strand transfer of viral
+                     dsDNA into host chromosome; three domains: HHCC zinc finger
+                     (NTD), catalytic core with DDE motif, C-terminal
+                     DNA-binding domain; interacts with LEDGF/p75 for chromatin
+                     targeting; target of INSTIs (dolutegravir, bictegravir,
+                     cabotegravir)"
+     misc_feature    4781..4796
+                     /note="Central polypurine tract (cPPT); RNase H-resistant
+                     RNA; initiates central plus-strand DNA synthesis; creates
+                     central DNA flap; contributes to nuclear import of PIC;
+                     used in lentiviral vector design"
+     CDS             5041..5619
+                     /gene="vif"
+                     /product="Viral infectivity factor Vif p23"
+                     /codon_start=1
+                     /note="Counteracts APOBEC3G and APOBEC3F host restriction
+                     factors by recruiting CRL5 E3 ubiquitin ligase
+                     (CBFB-RUNX1-Elongin B/C-Cullin5) for their proteasomal
+                     degradation; essential for replication in non-permissive
+                     cells (T cells, macrophages); absent from virions"
+     CDS             5559..5850
+                     /gene="vpr"
+                     /product="Viral protein R Vpr p15"
+                     /codon_start=1
+                     /note="Multifunctional accessory protein; packaged in
+                     virions via p6 LYPXL motif; facilitates nuclear import of
+                     PIC; induces G2/M cell cycle arrest via ATR kinase
+                     activation; activates DNA damage response; degrades SLX4
+                     complex and HLTF via DCAF1/VprBP"
+     CDS             join(5831..6045,8379..8424)
+                     /gene="tat"
+                     /product="Transactivator protein Tat p14"
+                     /codon_start=1
+                     /note="Essential transcriptional transactivator; binds TAR
+                     RNA hairpin at 5' end of all viral transcripts; recruits
+                     P-TEFb (CDK9/CycT1) to hyperphosphorylate RNA Pol II CTD;
+                     activates transcription elongation >100-fold; two exons
+                     joined by splicing; 86 aa in HXB2 (truncated), 101 aa in
+                     most strains"
+     exon            5831..6045
+                     /gene="tat"
+                     /number=1
+                     /note="Tat exon 1; encodes N-terminal activation and
+                     cysteine-rich domains"
+     exon            8379..8424
+                     /gene="tat"
+                     /number=2
+                     /note="Tat exon 2; encodes C-terminal RGD motif; overlaps
+                     with rev exon 2"
+     CDS             join(5970..6045,8379..8653)
+                     /gene="rev"
+                     /product="Regulator of expression of virion proteins Rev
+                     p19"
+                     /codon_start=1
+                     /note="Essential post-transcriptional regulator; binds RRE
+                     (Rev Response Element) in env via arginine-rich motif
+                     (ARM); oligomerizes on RRE; recruits CRM1/exportin-1 via
+                     nuclear export signal (NES); exports unspliced (genomic)
+                     and singly-spliced mRNAs from nucleus; two exons joined by
+                     splicing; overlaps with tat"
+     exon            5970..6045
+                     /gene="rev"
+                     /number=1
+                     /note="Rev exon 1; encodes N-terminal domain including ARM
+                     (RNA-binding)"
+     exon            8379..8653
+                     /gene="rev"
+                     /number=2
+                     /note="Rev exon 2; encodes C-terminal NES (nuclear export
+                     signal); overlaps with tat exon 2 and nef"
+     CDS             6062..6310
+                     /gene="vpu"
+                     /product="Viral protein U Vpu p16"
+                     /codon_start=1
+                     /note="HIV-1-specific accessory protein (absent in
+                     HIV-2/SIV); type I integral membrane protein; two
+                     functions: (1) targets CD4 for ERAD via beta-TrCP/SCF E3
+                     ligase; (2) counteracts BST-2/tetherin restriction factor
+                     to enhance virion release; also downregulates NTB-A and
+                     PVR"
+     CDS             6225..8795
+                     /gene="env"
+                     /product="Envelope glycoprotein gp160"
+                     /codon_start=1
+                     /protein_id="AAB50257.1"
+                     /note="Envelope polyprotein; cleaved by furin in
+                     trans-Golgi to gp120 (SU) + gp41 (TM); forms trimeric
+                     spikes on virion surface; mediates receptor binding and
+                     membrane fusion; heavily N-glycosylated (~50% mass); target
+                     of broadly neutralizing antibodies (bNAbs) and entry
+                     inhibitors"
+     mat_peptide     6225..7757
+                     /gene="env"
+                     /product="Surface glycoprotein gp120"
+                     /note="Receptor-binding subunit; non-covalently associated
+                     with gp41; contains 5 variable loops (V1-V5) and conserved
+                     CD4-binding site (CD4bs), co-receptor binding site (V3 loop
+                     for CCR5/CXCR4); glycan shield; target of bNAbs (VRC01,
+                     3BNC117, 10-1074)"
+     mat_peptide     7758..8795
+                     /gene="env"
+                     /product="Transmembrane glycoprotein gp41"
+                     /note="Fusion subunit; N-terminal fusion peptide; heptad
+                     repeats HR1 and HR2 form 6-helix bundle during fusion;
+                     membrane-proximal external region (MPER); transmembrane
+                     anchor; long cytoplasmic tail with Kennedy epitope; target
+                     of fusion inhibitors (enfuvirtide/T-20) and bNAbs (10E8,
+                     4E10)"
+     misc_RNA        7710..8061
+                     /gene="RRE"
+                     /product="Rev Response Element"
+                     /note="~351 nt structured RNA element within env intron;
+                     complex stem-loop structure (stems I-V); high-affinity Rev
+                     binding site on stem IIB; required for CRM1-mediated
+                     nuclear export of unspliced and singly-spliced viral mRNAs;
+                     target of RRE-based antivirals"
+     CDS             8797..9417
+                     /gene="nef"
+                     /product="Negative factor Nef p27"
+                     /codon_start=1
+                     /note="Multifunctional myristoylated accessory protein;
+                     downregulates CD4 (via AP-2 clathrin pathway) and MHC-I
+                     (via AP-1/PACS-1) from cell surface to evade immune
+                     recognition; enhances viral infectivity and replication;
+                     activates T cells; critical for AIDS progression
+                     (nef-deleted SIV is attenuated); overlaps with 3' LTR"
+     misc_feature    9086..9101
+                     /note="3' Polypurine tract (3' PPT); purine-rich sequence
+                     AAAAGAAAAGGGGG; RNase H-resistant RNA primer; initiates
+                     plus-strand strong-stop DNA synthesis; defines U3 boundary"
+     repeat_region   9086..9719
+                     /note="3' Long Terminal Repeat (LTR); U3-R-U5; identical to
+                     5' LTR after integration; contains poly-A signal; can act
+                     as promoter for downstream host genes (insertional
+                     mutagenesis)"
+                     /rpt_type=long_terminal_repeat
+                     /gene="3' LTR"
+     regulatory      9086..9538
+                     /regulatory_class="other"
+                     /note="U3 region of 3' LTR; identical to 5' U3 after
+                     integration; contains NF-kB sites, SP1 sites, TATA box"
+                     /gene="U3 (3' LTR)"
+     repeat_region   9539..9636
+                     /note="R repeat region of 3' LTR; contains poly-A signal
+                     and cleavage/polyadenylation site"
+                     /rpt_type=direct
+                     /gene="R (3' LTR)"
+     regulatory      9611..9616
+                     /regulatory_class="polyA_signal_sequence"
+                     /note="Polyadenylation signal AATAAA in 3' LTR R region;
+                     directs cleavage ~15-20 nt downstream and poly-A addition
+                     to all viral mRNAs; suppressed at 5' LTR by read-through
+                     transcription from upstream"
+     polyA_site      9632
+                     /note="Poly-A addition site in 3' LTR R region; cleavage
+                     ~18 nt downstream of AATAAA signal"
+     repeat_region   9637..9719
+                     /note="U5 region of 3' LTR; 3' end of integrated provirus"
+                     /gene="U5 (3' LTR)"
+     misc_feature    4907..4908
+                     /note="3' splice acceptor site A1 (vif mRNA); AG
+                     dinucleotide"
+     misc_feature    5387..5388
+                     /note="3' splice acceptor site A2 (vpr mRNA); AG
+                     dinucleotide"
+     misc_feature    5776..5777
+                     /note="3' splice acceptor site A3 (tat/rev/vpu/env mRNAs);
+                     AG dinucleotide"
+     misc_feature    6202..6203
+                     /note="3' splice acceptor site A4c (env mRNA); AG
+                     dinucleotide"
+     misc_feature    8368..8369
+                     /note="3' splice acceptor site A5 (tat exon2 / rev exon2
+                     mRNAs); AG dinucleotide"
+     misc_feature    8786..8787
+                     /note="3' splice acceptor site A7 (nef mRNA); AG
+                     dinucleotide"
+     3UTR            9418..9636
+                     /note="3' untranslated region; from nef stop codon to
+                     poly-A site; overlaps with 3' LTR"
+ORIGIN
+        1 tggaagggct aattcactcc caacgaagac aagatatcct tgatctgtgg atctaccaca
+       61 cacaaggcta cttccctgat tagcagaact acacaccagg gccagggatc agatatccac
+      121 tgacctttgg atggtgctac aagctagtac cagttgagcc agagaagtta gaagaagcca
+      181 acaaaggaga gaacaccagc ttgttacacc ctgtgagcct gcatggaatg gatgacccgg
+      241 agagagaagt gttagagtgg aggtttgaca gccgcctagc atttcatcac atggcccgag
+      301 agctgcatcc ggagtacttc aagaactgct gacatcgagc ttgctacaag ggactttccg
+      361 ctggggactt tccagggagg cgtggcctgg gcgggactgg ggagtggcga gccctcagat
+      421 cctgcatata agcagctgct ttttgcctgt actgggtctc tctggttaga ccagatctga
+      481 gcctgggagc tctctggcta actagggaac ccactgctta agcctcaata aagcttgcct
+      541 tgagtgcttc aagtagtgtg tgcccgtctg ttgtgtgact ctggtaacta gagatccctc
+      601 agaccctttt agtcagtgtg gaaaatctct agcagtggcg cccgaacagg gacctgaaag
+      661 cgaaagggaa accagaggag ctctctcgac gcaggactcg gcttgctgaa gcgcgcacgg
+      721 caagaggcga ggggcggcga ctggtgagta cgccaaaaat tttgactagc ggaggctaga
+      781 aggagagaga tgggtgcgag agcgtcagta ttaagcgggg gagaattaga tcgatgggaa
+      841 aaaattcggt taaggccagg gggaaagaaa aaatataaat taaaacatat agtatgggca
+      901 agcagggagc tagaacgatt cgcagttaat cctggcctgt tagaaacatc agaaggctgt
+      961 agacaaatac tgggacagct acaaccatcc cttcagacag gatcagaaga acttagatca
+     1021 ttatataata cagtagcaac cctctattgt gtgcatcaaa ggatagagat aaaagacacc
+     1081 aaggaagctt tagacaagat agaggaagag caaaacaaaa gtaagaaaaa agcacagcaa
+     1141 gcagcagctg acacaggaca cagcaatcag gtcagccaaa attaccctat agtgcagaac
+     1201 atccaggggc aaatggtaca tcaggccata tcacctagaa ctttaaatgc atgggtaaaa
+     1261 gtagtagaag agaaggcttt cagcccagaa gtgataccca tgttttcagc attatcagaa
+     1321 ggagccaccc cacaagattt aaacaccatg ctaaacacag tggggggaca tcaagcagcc
+     1381 atgcaaatgt taaaagagac catcaatgag gaagctgcag aatgggatag agtgcatcca
+     1441 gtgcatgcag ggcctattgc accaggccag atgagagaac caaggggaag tgacatagca
+     1501 ggaactacta gtacccttca ggaacaaata ggatggatga caaataatcc acctatccca
+     1561 gtaggagaaa tttataaaag atggataatc ctgggattaa ataaaatagt aagaatgtat
+     1621 agccctacca gcattctgga cataagacaa ggaccaaagg aaccctttag agactatgta
+     1681 gaccggttct ataaaactct aagagccgag caagcttcac aggaggtaaa aaattggatg
+     1741 acagaaacct tgttggtcca aaatgcgaac ccagattgta agactatttt aaaagcattg
+     1801 ggaccagcgg ctacactaga agaaatgatg acagcatgtc agggagtagg aggacccggc
+     1861 cataaggcaa gagttttggc tgaagcaatg agccaagtaa caaattcagc taccataatg
+     1921 atgcagagag gcaattttag gaaccaaaga aagattgtta agtgtttcaa ttgtggcaaa
+     1981 gaagggcaca cagccagaaa ttgcagggcc cctaggaaaa agggctgttg gaaatgtgga
+     2041 aaggaaggac accaaatgaa agattgtact gagagacagg ctaatttttt agggaagatc
+     2101 tggccttcct acaagggaag gccagggaat tttcttcaga gcagaccaga gccaacagcc
+     2161 ccaccagaag agagcttcag gtctggggta gagacaacaa ctccccctca gaagcaggag
+     2221 ccgatagaca aggaactgta tcctttaact tccctcaggt cactctttgg caacgacccc
+     2281 tcgtcacaat aaagataggg gggcaactaa aggaagctct attagataca ggagcagatg
+     2341 atacagtatt agaagaaatg agtttgccag gaagatggaa accaaaaatg atagggggaa
+     2401 ttggaggttt tatcaaagta agacagtatg atcagatact catagaaatc tgtggacata
+     2461 aagctatagg tacagtatta gtaggaccta cacctgtcaa cataattgga agaaatctgt
+     2521 tgactcagat tggttgcact ttaaattttc ccattagccc tattgagact gtaccagtaa
+     2581 aattaaagcc aggaatggat ggcccaaaag ttaaacaatg gccattgaca gaagaaaaaa
+     2641 taaaagcatt agtagaaatt tgtacagaga tggaaaagga agggaaaatt tcaaaaattg
+     2701 ggcctgaaaa tccatacaat actccagtat ttgccataaa gaaaaaagac agtactaaat
+     2761 ggagaaaatt agtagatttc agagaactta ataagagaac tcaagacttc tgggaagttc
+     2821 aattaggaat accacatccc gcagggttaa aaaagaaaaa atcagtaaca gtactggatg
+     2881 tgggtgatgc atatttttca gttcccttag atgaagactt caggaagtat actgcattta
+     2941 ccatacctag tataaacaat gagacaccag ggattagata tcagtacaat gtgcttccac
+     3001 agggatggaa aggatcacca gcaatattcc aaagtagcat gacaaaaatc ttagagcctt
+     3061 ttagaaaaca aaatccagac atagttatct atcaatacat ggatgatttg tatgtaggat
+     3121 ctgacttaga aatagggcag catagaacaa aaatagagga gctgagacaa catctgttga
+     3181 ggtggggact taccacacca gacaaaaaac atcagaaaga acctccattc ctttggatgg
+     3241 gttatgaact ccatcctgat aaatggacag tacagcctat agtgctgcca gaaaaagaca
+     3301 gctggactgt caatgacata cagaagttag tggggaaatt gaattgggca agtcagattt
+     3361 acccagggat taaagtaagg caattatgta aactccttag aggaaccaaa gcactaacag
+     3421 aagtaatacc actaacagaa gaagcagagc tagaactggc agaaaacaga gagattctaa
+     3481 aagaaccagt acatggagtg tattatgacc catcaaaaga cttaatagca gaaatacaga
+     3541 agcaggggca aggccaatgg acatatcaaa tttatcaaga gccatttaaa aatctgaaaa
+     3601 caggaaaata tgcaagaatg aggggtgccc acactaatga tgtaaaacaa ttaacagagg
+     3661 cagtgcaaaa aataaccaca gaaagcatag taatatgggg aaagactcct aaatttaaac
+     3721 tgcccataca aaaggaaaca tgggaaacat ggtggacaga gtattggcaa gccacctgga
+     3781 ttcctgagtg ggagtttgtt aatacccctc ccttagtgaa attatggtac cagttagaga
+     3841 aagaacccat agtaggagca gaaaccttct atgtagatgg ggcagctaac agggagacta
+     3901 aattaggaaa agcaggatat gttactaata gaggaagaca aaaagttgtc accctaactg
+     3961 acacaacaaa tcagaagact gagttacaag caatttatct agctttgcag gattcgggat
+     4021 tagaagtaaa catagtaaca gactcacaat atgcattagg aatcattcaa gcacaaccag
+     4081 atcaaagtga atcagagtta gtcaatcaaa taatagagca gttaataaaa aaggaaaagg
+     4141 tctatctggc atgggtacca gcacacaaag gaattggagg aaatgaacaa gtagataaat
+     4201 tagtcagtgc tggaatcagg aaagtactat ttttagatgg aatagataag gcccaagatg
+     4261 aacatgagaa atatcacagt aattggagag caatggctag tgattttaac ctgccacctg
+     4321 tagtagcaaa agaaatagta gccagctgtg ataaatgtca gctaaaagga gaagccatgc
+     4381 atggacaagt agactgtagt ccaggaatat ggcaactaga ttgtacacat ttagaaggaa
+     4441 aagttatcct ggtagcagtt catgtagcca gtggatatat agaagcagaa gttattccag
+     4501 cagaaacagg gcaggaaaca gcatattttc ttttaaaatt agcaggaaga tggccagtaa
+     4561 aaacaataca tactgacaat ggcagcaatt tcaccggtgc tacggttagg gccgcctgtt
+     4621 ggtgggcggg aatcaagcag gaatttggaa ttccctacaa tccccaaagt caaggagtag
+     4681 tagaatctat gaataaagaa ttaaagaaaa ttataggaca ggtaagagat caggctgaac
+     4741 atcttaagac agcagtacaa atggcagtat tcatccacaa ttttaaaaga aaagggggga
+     4801 ttggggggta cagtgcaggg gaaagaatag tagacataat agcaacagac atacaaacta
+     4861 aagaattaca aaaacaaatt acaaaaattc aaaattttcg ggtttattac agggacagca
+     4921 gaaatccact ttggaaagga ccagcaaagc tcctctggaa aggtgaaggg gcagtagtaa
+     4981 tacaagataa tagtgacata aaagtagtgc caagaagaaa agcaaagatc attagggatt
+     5041 atggaaaaca gatggcaggt gatgattgtg tggcaagtag acaggatgag gattagaaca
+     5101 tggaaaagtt tagtaaaaca ccatatgtat gtttcaggga aagctagggg atggttttat
+     5161 agacatcact atgaaagccc tcatccaaga ataagttcag aagtacacat cccactaggg
+     5221 gatgctagat tggtaataac aacatattgg ggtctgcata caggagaaag agactggcat
+     5281 ttgggtcagg gagtctccat agaatggagg aaaaagagat atagcacaca agtagaccct
+     5341 gaactagcag accaactaat tcatctgtat tactttgact gtttttcaga ctctgctata
+     5401 agaaaggcct tattaggaca catagttagc cctaggtgtg aatatcaagc aggacataac
+     5461 aaggtaggat ctctacaata cttggcacta gcagcattaa taacaccaaa aaagataaag
+     5521 ccacctttgc ctagtgttac gaaactgaca gaggatagat ggaacaagcc ccagaagacc
+     5581 aagggccaca gagggagcca cacaatgaat ggacactaga gcttttagag gagcttaaga
+     5641 atgaagctgt tagacatttt cctaggattt ggctccatgg cttagggcaa catatctatg
+     5701 aaacttatgg ggatacttgg gcaggagtgg aagccataat aagaattctg caacaactgc
+     5761 tgtttatcca ttttcagaat tgggtgtcga catagcagaa taggcgttac tcgacagagg
+     5821 agagcaagaa atggagccag tagatcctag actagagccc tggaagcatc caggaagtca
+     5881 gcctaaaact gcttgtacca attgctattg taaaaagtgt tgctttcatt gccaagtttg
+     5941 tttcataaca aaagccttag gcatctccta tggcaggaag aagcggagac agcgacgaag
+     6001 agctcatcag aacagtcaga ctcatcaagc ttctctatca aagcagtaag tagtacatgt
+     6061 aacgcaacct ataccaatag tagcaatagt agcattagta gtagcaataa taatagcaat
+     6121 agttgtgtgg tccatagtaa tcatagaata taggaaaata ttaagacaaa gaaaaataga
+     6181 caggttaatt gatagactaa tagaaagagc agaagacagt ggcaatgaga gtgaaggaga
+     6241 aatatcagca cttgtggaga tgggggtgga gatggggcac catgctcctt gggatgttga
+     6301 tgatctgtag tgctacagaa aaattgtggg tcacagtcta ttatggggta cctgtgtgga
+     6361 aggaagcaac caccactcta ttttgtgcat cagatgctaa agcatatgat acagaggtac
+     6421 ataatgtttg ggccacacat gcctgtgtac ccacagaccc caacccacaa gaagtagtat
+     6481 tggtaaatgt gacagaaaat tttaacatgt ggaaaaatga catggtagaa cagatgcatg
+     6541 aggatataat cagtttatgg gatcaaagcc taaagccatg tgtaaaatta accccactct
+     6601 gtgttagttt aaagtgcact gatttgaaga atgatactaa taccaatagt agtagcggga
+     6661 gaatgataat ggagaaagga gagataaaaa actgctcttt caatatcagc acaagcataa
+     6721 gaggtaaggt gcagaaagaa tatgcatttt tttataaact tgatataata ccaatagata
+     6781 atgatactac cagctataag ttgacaagtt gtaacacctc agtcattaca caggcctgtc
+     6841 caaaggtatc ctttgagcca attcccatac attattgtgc cccggctggt tttgcgattc
+     6901 taaaatgtaa taataagacg ttcaatggaa caggaccatg tacaaatgtc agcacagtac
+     6961 aatgtacaca tggaattagg ccagtagtat caactcaact gctgttaaat ggcagtctag
+     7021 cagaagaaga ggtagtaatt agatctgtca atttcacgga caatgctaaa accataatag
+     7081 tacagctgaa cacatctgta gaaattaatt gtacaagacc caacaacaat acaagaaaaa
+     7141 gaatccgtat ccagagagga ccagggagag catttgttac aataggaaaa ataggaaata
+     7201 tgagacaagc acattgtaac attagtagag caaaatggaa taacacttta aaacagatag
+     7261 ctagcaaatt aagagaacaa tttggaaata ataaaacaat aatctttaag caatcctcag
+     7321 gaggggaccc agaaattgta acgcacagtt ttaattgtgg aggggaattt ttctactgta
+     7381 attcaacaca actgtttaat agtacttggt ttaatagtac ttggagtact gaagggtcaa
+     7441 ataacactga aggaagtgac acaatcaccc tcccatgcag aataaaacaa attataaaca
+     7501 tgtggcagaa agtaggaaaa gcaatgtatg cccctcccat cagtggacaa attagatgtt
+     7561 catcaaatat tacagggctg ctattaacaa gagatggtgg taatagcaac aatgagtccg
+     7621 agatcttcag acctggagga ggagatatga gggacaattg gagaagtgaa ttatataaat
+     7681 ataaagtagt aaaaattgaa ccattaggag tagcacccac caaggcaaag agaagagtgg
+     7741 tgcagagaga aaaaagagca gtgggaatag gagctttgtt ccttgggttc ttgggagcag
+     7801 caggaagcac tatgggcgca gcctcaatga cgctgacggt acaggccaga caattattgt
+     7861 ctggtatagt gcagcagcag aacaatttgc tgagggctat tgaggcgcaa cagcatctgt
+     7921 tgcaactcac agtctggggc atcaagcagc tccaggcaag aatcctggct gtggaaagat
+     7981 acctaaagga tcaacagctc ctggggattt ggggttgctc tggaaaactc atttgcacca
+     8041 ctgctgtgcc ttggaatgct agttggagta ataaatctct ggaacagatt tggaatcaca
+     8101 cgacctggat ggagtgggac agagaaatta acaattacac aagcttaata cactccttaa
+     8161 ttgaagaatc gcaaaaccag caagaaaaga atgaacaaga attattggaa ttagataaat
+     8221 gggcaagttt gtggaattgg tttaacataa caaattggct gtggtatata aaattattca
+     8281 taatgatagt aggaggcttg gtaggtttaa gaatagtttt tgctgtactt tctatagtga
+     8341 atagagttag gcagggatat tcaccattat cgtttcagac ccacctccca accccgaggg
+     8401 gacccgacag gcccgaagga atagaagaag aaggtggaga gagagacaga gacagatcca
+     8461 ttcgattagt gaacggatcc ttggcactta tctgggacga tctgcggagc ctgtgcctct
+     8521 tcagctacca ccgcttgaga gacttactct tgattgtaac gaggattgtg gaacttctgg
+     8581 gacgcagggg gtgggaagcc ctcaaatatt ggtggaatct cctacagtat tggagtcagg
+     8641 aactaaagaa tagtgctgtt agcttgctca atgccacagc catagcagta gctgagggga
+     8701 cagatagggt tatagaagta gtacaaggag cttgtagagc tattcgccac atacctagaa
+     8761 gaataagaca gggcttggaa aggattttgc tataagatgg gtggcaagtg gtcaaaaagt
+     8821 agtgtgattg gatggcctac tgtaagggaa agaatgagac gagctgagcc agcagcagat
+     8881 agggtgggag cagcatctcg agacctggaa aaacatggag caatcacaag tagcaataca
+     8941 gcagctacca atgctgcttg tgcctggcta gaagcacaag aggaggagga ggtgggtttt
+     9001 ccagtcacac ctcaggtacc tttaagacca atgacttaca aggcagctgt agatcttagc
+     9061 cactttttaa aagaaaaggg gggactggaa gggctaattc actcccaaag aagacaagat
+     9121 atccttgatc tgtggatcta ccacacacaa ggctacttcc ctgattagca gaactacaca
+     9181 ccagggccag gggtcagata tccactgacc tttggatggt gctacaagct agtaccagtt
+     9241 gagccagata agatagaaga ggccaataaa ggagagaaca ccagcttgtt acaccctgtg
+     9301 agcctgcatg ggatggatga cccggagaga gaagtgttag agtggaggtt tgacagccgc
+     9361 ctagcatttc atcacgtggc ccgagagctg catccggagt acttcaagaa ctgctgacat
+     9421 cgagcttgct acaagggact ttccgctggg gactttccag ggaggcgtgg cctgggcggg
+     9481 actggggagt ggcgagccct cagatcctgc atataagcag ctgctttttg cctgtactgg
+     9541 gtctctctgg ttagaccaga tctgagcctg ggagctctct ggctaactag ggaacccact
+     9601 gcttaagcct caataaagct tgccttgagt gcttcaagta gtgtgtgccc gtctgttgtg
+     9661 tgactctggt aactagagat ccctcagacc cttttagtca gtgtggaaaa tctctagca
+//
